@@ -9,7 +9,7 @@ const About = () => {
     <section id="about" className="about-section" ref={ref}>
       <div className={`about-inner ${inView ? 'visible' : ''}`}>
         <div className="about-left">
-          <span className="section-label">// ABOUT_ME</span>
+          <span className="section-label">ABOUT_ME</span>
           <h2 className="section-title">
             Who I <span>Am</span>
           </h2>
