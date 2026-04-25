@@ -15,7 +15,6 @@ const DATA_SKILLS = [
   { name: 'Python (Pandas / NumPy)', level: 84 },
   { name: 'Data Visualization', level: 79 },
   { name: 'SQL Analytics', level: 81 },
-  // { name: 'Power BI / Tableau', level: 72 },
   { name: 'Machine Learning Basics', level: 65 },
   { name: 'Data Cleaning / ETL', level: 80 },
 ];
