@@ -35,7 +35,7 @@ const TIMELINE = [
   },
   {
     id: 4,
-    year: '2022 – 2023',
+    year: '2023 – Current',
     role: 'BSc Pure Statistics',
     company: 'JOMO KENYATTA UNIVERSITY OF AGRICULTURE AND TECHNOLOGY',
     type: 'education',
