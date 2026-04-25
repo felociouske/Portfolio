@@ -1,0 +1,117 @@
+.skills-section {
+  position: relative;
+  z-index: 1;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.skills-card {
+  padding: 28px;
+}
+
+.skills-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: var(--neon-green);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--neon-green-border);
+}
+
+.skills-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.skill-bar-item {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.skill-bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-bar-name {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.skill-bar-level {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--neon-green);
+  opacity: 0.8;
+}
+
+.skill-bar-track {
+  height: 3px;
+  background: rgba(0, 255, 65, 0.1);
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--neon-green-dim), var(--neon-green));
+  box-shadow: 0 0 6px rgba(0, 255, 65, 0.5);
+  border-radius: 1px;
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skills-tags-section {
+  padding-top: 8px;
+}
+
+.skills-tags-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  border: 1px solid var(--neon-green-border);
+  padding: 5px 12px;
+  cursor: default;
+  transition: var(--transition);
+}
+
+.skill-tag:hover {
+  color: var(--neon-green);
+  border-color: var(--neon-green-dim);
+  box-shadow: var(--glow-sm);
+}
