@@ -212,7 +212,7 @@ const Contact = () => {
 
       <div className="contact-footer">
         <span className="contact-footer-text">
-          Designed & Built by <span>Your Name</span> — {new Date().getFullYear()}
+          Designed & Built by <span>Martin</span> — {new Date().getFullYear()}
         </span>
         <span className="contact-footer-sys">SYS_STATUS: ONLINE</span>
       </div>

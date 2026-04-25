@@ -57,7 +57,6 @@ const WelcomeSound = () => {
           window.speechSynthesis.onvoiceschanged = speak;
         }
       } catch (err) {
-        // Audio not supported silently ignored
       }
     };
 
