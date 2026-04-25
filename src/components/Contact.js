@@ -62,7 +62,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact-section" ref={ref}>
-      <span className="section-label">// ESTABLISH_CONTACT</span>
+      <span className="section-label">ESTABLISH_CONTACT</span>
       <h2 className={`section-title ${inView ? 'animate-in' : ''}`}>
         Get In <span>Touch</span>
       </h2>

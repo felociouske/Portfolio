@@ -90,7 +90,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="projects-section" ref={ref}>
-      <span className="section-label">// PROJECT_LOG</span>
+      <span className="section-label">PROJECT_LOG</span>
       <h2 className={`section-title ${inView ? 'animate-in' : ''}`}>
         What I've <span>Built</span>
       </h2>

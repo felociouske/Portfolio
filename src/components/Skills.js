@@ -45,7 +45,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="skills-section" ref={ref}>
-      <span className="section-label">// SKILL_MATRIX</span>
+      <span className="section-label">SKILL_MATRIX</span>
       <h2 className={`section-title ${inView ? 'animate-in' : ''}`}>
         Tech <span>Stack</span>
       </h2>

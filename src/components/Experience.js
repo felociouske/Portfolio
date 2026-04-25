@@ -50,7 +50,7 @@ const Experience = () => {
 
   return (
     <section id="experience" className="experience-section" ref={ref}>
-      <span className="section-label">// MISSION_LOG</span>
+      <span className="section-label">MISSION_LOG</span>
       <h2 className={`section-title ${inView ? 'animate-in' : ''}`}>
         My <span>Journey</span>
       </h2>
