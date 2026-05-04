@@ -27,11 +27,11 @@
   font-family: var(--font-mono);
   font-size: 12px;
   letter-spacing: 0.15em;
-  color: var(--neon-green);
+  color: var(--accent);
   text-transform: uppercase;
   margin-bottom: 24px;
   padding-bottom: 16px;
-  border-bottom: 1px solid var(--neon-green-border);
+  border-bottom: 1px solid var(--accent-border);
 }
 
 .skills-bars {
@@ -61,7 +61,7 @@
 .skill-bar-level {
   font-family: var(--font-mono);
   font-size: 11px;
-  color: var(--neon-green);
+  color: var(--accent);
   opacity: 0.8;
 }
 
@@ -74,7 +74,7 @@
 
 .skill-bar-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--neon-green-dim), var(--neon-green));
+  background: linear-gradient(90deg, var(--accent-dim), var(--accent));
   box-shadow: 0 0 6px rgba(0, 255, 65, 0.5);
   border-radius: 1px;
   transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -104,14 +104,14 @@
   font-size: 11px;
   letter-spacing: 0.1em;
   color: var(--text-secondary);
-  border: 1px solid var(--neon-green-border);
+  border: 1px solid var(--accent-border);
   padding: 5px 12px;
   cursor: default;
   transition: var(--transition);
 }
 
 .skill-tag:hover {
-  color: var(--neon-green);
-  border-color: var(--neon-green-dim);
+  color: var(--accent);
+  border-color: var(--accent-dim);
   box-shadow: var(--glow-sm);
 }

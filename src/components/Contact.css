@@ -37,7 +37,7 @@
 }
 
 .contact-info-row svg {
-  color: var(--neon-green);
+  color: var(--accent);
   flex-shrink: 0;
 }
 
@@ -56,7 +56,7 @@
   align-items: center;
   gap: 8px;
   padding: 10px 16px;
-  border: 1px solid var(--neon-green-border);
+  border: 1px solid var(--accent-border);
   color: var(--text-secondary);
   font-family: var(--font-mono);
   font-size: 12px;
@@ -65,8 +65,8 @@
 }
 
 .social-btn:hover {
-  border-color: var(--neon-green-dim);
-  color: var(--neon-green);
+  border-color: var(--accent-dim);
+  color: var(--accent);
   box-shadow: var(--glow-sm);
 }
 
@@ -81,14 +81,14 @@
   align-items: center;
   justify-content: space-between;
   padding-bottom: 16px;
-  border-bottom: 1px solid var(--neon-green-border);
+  border-bottom: 1px solid var(--accent-border);
 }
 
 .form-header-text {
   font-family: var(--font-mono);
   font-size: 10px;
   letter-spacing: 0.25em;
-  color: var(--neon-green);
+  color: var(--accent);
   opacity: 0.7;
 }
 
@@ -96,7 +96,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--neon-green);
+  background: var(--accent);
   animation: pulse-glow 2s ease-in-out infinite;
 }
 
@@ -128,7 +128,7 @@
 
 .form-input {
   background: rgba(0, 255, 65, 0.02);
-  border: 1px solid var(--neon-green-border);
+  border: 1px solid var(--accent-border);
   color: var(--text-primary);
   font-family: var(--font-mono);
   font-size: 13px;
@@ -143,7 +143,7 @@
 }
 
 .form-input:focus {
-  border-color: var(--neon-green-dim);
+  border-color: var(--accent-dim);
   background: rgba(0, 255, 65, 0.04);
   box-shadow: var(--glow-sm);
 }
@@ -161,11 +161,11 @@
 .form-success {
   font-family: var(--font-mono);
   font-size: 12px;
-  color: var(--neon-green);
+  color: var(--accent);
   text-align: center;
   padding: 12px;
-  border: 1px solid var(--neon-green-border);
-  background: var(--neon-green-glow);
+  border: 1px solid var(--accent-border);
+  background: var(--accent-glow);
 }
 
 .contact-footer {
@@ -175,7 +175,7 @@
   gap: 8px;
   margin-top: 80px;
   padding-top: 32px;
-  border-top: 1px solid var(--neon-green-border);
+  border-top: 1px solid var(--accent-border);
   text-align: center;
 }
 
@@ -186,14 +186,14 @@
 }
 
 .contact-footer-text span {
-  color: var(--neon-green);
+  color: var(--accent);
 }
 
 .contact-footer-sys {
   font-family: var(--font-mono);
   font-size: 10px;
   letter-spacing: 0.2em;
-  color: var(--neon-green);
+  color: var(--accent);
   opacity: 0.4;
 }
 

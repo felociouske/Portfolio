@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { ThemeProvider } from './context/ThemeContext';
+import GalaxyLoader from './components/GalaxyLoader';
+import ForestBackground from './components/ForestBackground';
 import StarField from './components/StarField';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
@@ -9,11 +12,12 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import WelcomeSound from './components/WelcomeSound';
 
-const App = () => {
+const AppContent = () => {
   return (
     <div className="app-layout">
       <WelcomeSound />
       <StarField />
+      <ForestBackground />
       <Nav />
       <main className="main-content">
         <Hero />
@@ -24,6 +28,17 @@ const App = () => {
         <Contact />
       </main>
     </div>
+  );
+};
+
+const App = () => {
+  const [loaded, setLoaded] = useState(false);
+
+  return (
+    <ThemeProvider>
+      {!loaded && <GalaxyLoader onComplete={() => setLoaded(true)} />}
+      {loaded && <AppContent />}
+    </ThemeProvider>
   );
 };
 

@@ -1,4 +1,13 @@
-:root {
+/* ===================================================
+   IMPORTS
+   =================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Exo+2:wght@400;600;800&family=Playfair+Display:wght@700&display=swap');
+
+/* ===================================================
+   SPACE THEME (default)
+   =================================================== */
+:root,
+[data-theme="space"] {
   --bg-primary: #020202;
   --bg-secondary: #050c05;
   --bg-card: rgba(0, 255, 65, 0.03);
@@ -17,8 +26,112 @@
   --glow-sm: 0 0 8px rgba(0, 255, 65, 0.4);
   --glow-md: 0 0 20px rgba(0, 255, 65, 0.3), 0 0 40px rgba(0, 255, 65, 0.1);
   --glow-lg: 0 0 40px rgba(0, 255, 65, 0.4), 0 0 80px rgba(0, 255, 65, 0.15);
+
+  /* theme alias tokens */
+  --accent: #00ff41;
+  --accent-dim: rgba(0, 255, 65, 0.4);
+  --accent-glow: rgba(0, 255, 65, 0.5);
+  --accent-border: rgba(0, 255, 65, 0.25);
+  --accent-bg: rgba(0, 255, 65, 0.03);
+  --accent-bg-hover: rgba(0, 255, 65, 0.07);
+  --nav-bg: rgba(2, 2, 2, 0.95);
+  --nav-border: rgba(0, 255, 65, 0.2);
+  --dropdown-bg: rgba(4, 10, 4, 0.97);
+  --btn-text-on-accent: #000;
+
+  /* scrollbar */
+  --scrollbar-thumb: rgba(0, 255, 65, 0.4);
 }
 
+/* ===================================================
+   FOREST THEME
+   =================================================== */
+[data-theme="forest"] {
+  --bg-primary: #060e06;
+  --bg-secondary: #0a1a0a;
+  --bg-card: rgba(34, 139, 34, 0.05);
+
+  --accent: #4ade80;
+  --accent-dim: rgba(74, 222, 128, 0.45);
+  --accent-glow: rgba(74, 222, 128, 0.5);
+  --accent-border: rgba(74, 222, 128, 0.3);
+  --accent-bg: rgba(34, 139, 34, 0.05);
+  --accent-bg-hover: rgba(34, 139, 34, 0.1);
+
+  /* keep old variable names working */
+  --neon-green: #4ade80;
+  --neon-green-dim: rgba(74, 222, 128, 0.45);
+  --neon-green-glow: rgba(74, 222, 128, 0.15);
+  --neon-green-border: rgba(74, 222, 128, 0.3);
+
+  --text-primary: #d4f5d4;
+  --text-secondary: rgba(180, 240, 180, 0.6);
+  --text-muted: rgba(150, 220, 150, 0.35);
+
+  --font-display: 'Playfair Display', 'Exo 2', sans-serif;
+  --font-mono: 'Share Tech Mono', monospace;
+
+  --glow-sm: 0 0 10px rgba(74, 222, 128, 0.45);
+  --glow-md: 0 0 22px rgba(74, 222, 128, 0.3), 0 0 44px rgba(34, 139, 34, 0.12);
+  --glow-lg: 0 0 44px rgba(74, 222, 128, 0.4), 0 0 88px rgba(34, 139, 34, 0.18);
+
+  --nav-bg: rgba(4, 12, 4, 0.96);
+  --nav-border: rgba(74, 222, 128, 0.22);
+  --dropdown-bg: rgba(4, 14, 4, 0.97);
+  --btn-text-on-accent: #001800;
+  --scrollbar-thumb: rgba(74, 222, 128, 0.4);
+
+  /* nav height unchanged */
+  --nav-height-mobile: 64px;
+  --nav-width-desktop: 72px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===================================================
+   VEGETATION THEME
+   =================================================== */
+[data-theme="vegetation"] {
+  --bg-primary: #03100a;
+  --bg-secondary: #061a0e;
+  --bg-card: rgba(22, 163, 74, 0.05);
+
+  --accent: #86efac;
+  --accent-dim: rgba(134, 239, 172, 0.45);
+  --accent-glow: rgba(134, 239, 172, 0.55);
+  --accent-border: rgba(134, 239, 172, 0.3);
+  --accent-bg: rgba(22, 163, 74, 0.05);
+  --accent-bg-hover: rgba(22, 163, 74, 0.1);
+
+  --neon-green: #86efac;
+  --neon-green-dim: rgba(134, 239, 172, 0.45);
+  --neon-green-glow: rgba(134, 239, 172, 0.18);
+  --neon-green-border: rgba(134, 239, 172, 0.28);
+
+  --text-primary: #e0fae8;
+  --text-secondary: rgba(200, 245, 215, 0.6);
+  --text-muted: rgba(160, 230, 180, 0.35);
+
+  --font-display: 'Exo 2', sans-serif;
+  --font-mono: 'Share Tech Mono', monospace;
+
+  --glow-sm: 0 0 10px rgba(134, 239, 172, 0.45);
+  --glow-md: 0 0 22px rgba(134, 239, 172, 0.3), 0 0 44px rgba(22, 163, 74, 0.12);
+  --glow-lg: 0 0 44px rgba(134, 239, 172, 0.4), 0 0 88px rgba(22, 163, 74, 0.18);
+
+  --nav-bg: rgba(3, 14, 8, 0.96);
+  --nav-border: rgba(134, 239, 172, 0.22);
+  --dropdown-bg: rgba(3, 16, 8, 0.97);
+  --btn-text-on-accent: #001a06;
+  --scrollbar-thumb: rgba(134, 239, 172, 0.4);
+
+  --nav-height-mobile: 64px;
+  --nav-width-desktop: 72px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===================================================
+   GLOBAL RESETS & BASE
+   =================================================== */
 *,
 *::before,
 *::after {
@@ -38,16 +151,17 @@ body {
   font-family: var(--font-mono);
   overflow-x: hidden;
   cursor: default;
+  transition: background-color 0.6s ease, color 0.4s ease;
 }
 
 ::selection {
-  background: var(--neon-green);
-  color: #000;
+  background: var(--accent);
+  color: var(--btn-text-on-accent, #000);
 }
 
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--bg-primary); }
-::-webkit-scrollbar-thumb { background: var(--neon-green-dim); border-radius: 2px; }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb, rgba(0,255,65,0.4)); border-radius: 2px; }
 
 .app-layout {
   display: flex;
@@ -74,10 +188,11 @@ section {
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.3em;
-  color: var(--neon-green);
+  color: var(--accent);
   text-transform: uppercase;
   margin-bottom: 12px;
   opacity: 0.7;
+  transition: color 0.5s ease;
 }
 
 .section-title {
@@ -87,11 +202,13 @@ section {
   color: var(--text-primary);
   line-height: 1.1;
   margin-bottom: 16px;
+  transition: color 0.5s ease;
 }
 
 .section-title span {
-  color: var(--neon-green);
+  color: var(--accent);
   text-shadow: var(--glow-sm);
+  transition: color 0.5s ease, text-shadow 0.5s ease;
 }
 
 .section-desc {
@@ -106,14 +223,18 @@ section {
 .neon-line {
   width: 60px;
   height: 2px;
-  background: var(--neon-green);
+  background: var(--accent);
   box-shadow: var(--glow-sm);
   margin-bottom: 32px;
+  transition: background 0.5s ease, box-shadow 0.5s ease;
 }
 
+/* ===================================================
+   CARD
+   =================================================== */
 .card {
   background: var(--bg-card);
-  border: 1px solid var(--neon-green-border);
+  border: 1px solid var(--accent-border);
   border-radius: 4px;
   padding: 28px;
   transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
@@ -128,32 +249,33 @@ section {
 .card::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0; right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--neon-green), transparent);
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .card:hover {
-  border-color: var(--neon-green-dim);
-  background: rgba(0, 255, 65, 0.05);
+  border-color: var(--accent-dim);
+  background: var(--accent-bg-hover);
   box-shadow: var(--glow-md), 0 24px 48px rgba(0, 0, 0, 0.5);
   transform: translateY(-6px) rotateX(3deg) rotateY(-1deg);
 }
 
 .card:hover::before { opacity: 1; }
 
+/* ===================================================
+   BUTTONS
+   =================================================== */
 .btn-primary {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   padding: 14px 32px;
   background: transparent;
-  border: 1px solid var(--neon-green);
-  color: var(--neon-green);
+  border: 1px solid var(--accent);
+  color: var(--accent);
   font-family: var(--font-mono);
   font-size: 13px;
   letter-spacing: 0.15em;
@@ -170,15 +292,18 @@ section {
   position: absolute;
   top: 0; left: -100%;
   width: 100%; height: 100%;
-  background: var(--neon-green);
+  background: var(--accent);
   transition: left 0.3s ease;
   z-index: 0;
 }
 
-.btn-primary:hover { color: #000; box-shadow: var(--glow-md); }
+.btn-primary:hover { color: var(--btn-text-on-accent, #000); box-shadow: var(--glow-md); }
 .btn-primary:hover::before { left: 0; }
 .btn-primary span, .btn-primary svg { position: relative; z-index: 1; }
 
+/* ===================================================
+   SCROLL REVEAL ANIMATIONS
+   =================================================== */
 .reveal {
   opacity: 0;
   transform: translateY(70px) rotateX(-10deg);
@@ -187,7 +312,6 @@ section {
               transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* fall from above */
 .reveal-fall {
   opacity: 0;
   transform: translateY(-80px) rotateX(18deg) scale(0.94);
@@ -196,25 +320,24 @@ section {
               transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* slide from left */
+/* slide from left — used for project cards on even rows */
 .reveal-left {
   opacity: 0;
-  transform: translateX(-80px) rotateY(18deg);
+  transform: translateX(-100px) rotateY(15deg);
   transform-origin: right center;
   transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
               transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* slide from right */
+/* slide from right — used for project cards on odd rows */
 .reveal-right {
   opacity: 0;
-  transform: translateX(80px) rotateY(-18deg);
+  transform: translateX(100px) rotateY(-15deg);
   transform-origin: left center;
   transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
               transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* zoom up */
 .reveal-zoom {
   opacity: 0;
   transform: scale(0.65) translateY(40px);
@@ -222,7 +345,6 @@ section {
               transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* visible state — shared */
 .reveal.is-visible,
 .reveal-fall.is-visible,
 .reveal-left.is-visible,
@@ -232,17 +354,29 @@ section {
   transform: none;
 }
 
+/* animate-in (existing class) */
+@keyframes animateIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.animate-in {
+  animation: animateIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
 /* stagger delays */
-.delay-1 { transition-delay: 0.07s; }
-.delay-2 { transition-delay: 0.14s; }
-.delay-3 { transition-delay: 0.21s; }
-.delay-4 { transition-delay: 0.28s; }
-.delay-5 { transition-delay: 0.35s; }
-.delay-6 { transition-delay: 0.42s; }
-.delay-7 { transition-delay: 0.49s; }
-.delay-8 { transition-delay: 0.56s; }
+.delay-1 { transition-delay: 0.07s; animation-delay: 0.07s; }
+.delay-2 { transition-delay: 0.14s; animation-delay: 0.14s; }
+.delay-3 { transition-delay: 0.21s; animation-delay: 0.21s; }
+.delay-4 { transition-delay: 0.28s; animation-delay: 0.28s; }
+.delay-5 { transition-delay: 0.35s; animation-delay: 0.35s; }
+.delay-6 { transition-delay: 0.42s; animation-delay: 0.42s; }
+.delay-7 { transition-delay: 0.49s; animation-delay: 0.49s; }
+.delay-8 { transition-delay: 0.56s; animation-delay: 0.56s; }
 
-
+/* ===================================================
+   KEYFRAMES
+   =================================================== */
 @keyframes fadeIn {
   from { opacity: 0; }
   to   { opacity: 1; }
@@ -289,14 +423,17 @@ section {
 }
 
 @keyframes borderPulse {
-  0%, 100% { border-color: var(--neon-green-border); }
-  50%       { border-color: var(--neon-green); box-shadow: var(--glow-sm); }
+  0%, 100% { border-color: var(--accent-border); }
+  50%       { border-color: var(--accent); box-shadow: var(--glow-sm); }
 }
 
 @keyframes progressFill {
   from { width: 0%; }
 }
 
+/* ===================================================
+   LAYOUT HELPERS
+   =================================================== */
 .grid-2 { display: grid; grid-template-columns: 1fr; gap: 24px; }
 .grid-3 { display: grid; grid-template-columns: 1fr; gap: 20px; }
 

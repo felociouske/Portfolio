@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import useInView from '../hooks/useInView';
+import useScrollReveal from '../hooks/useScrollReveal';
 import './Projects.css';
 
 const PROJECTS = [
   {
     id: 1,
     category: 'fullstack',
-    title: 'Django + React E-Commerce',
+    title: 'Nexcribe - Writting and transcription app and website',
     description:
-      'Full-stack e-commerce platform with JWT auth, Stripe payments, product management, and an admin dashboard. REST API backend with optimized query sets.',
+      'A full-stack web application for transcribing and writting, React and vite frontend based and Django backend. With a fully customized admin panel with user management, subscription management, and content management.',
     tags: ['React', 'Django', 'PostgreSQL', 'Stripe', 'DRF'],
-    github: '#',
-    live: '#',
+    github: 'https://github.com/felociouske/nexcribe_frontend',
+    live: 'https://www.nexcribe.com',
     status: 'LIVE',
   },
   {
@@ -45,7 +46,7 @@ const PROJECTS = [
     tags: ['Python', 'Celery', 'PostgreSQL', 'Pandas', 'Power BI'],
     github: '#',
     live: '#',
-    status: 'ARCHIVED',
+    status: 'LIVE',
   },
   {
     id: 5,
@@ -55,7 +56,7 @@ const PROJECTS = [
       'Space-tech themed personal portfolio with animated canvas background, typing effects, WebAudio API welcome sound, and responsive side/bottom navigation.',
     tags: ['React', 'CSS3', 'Canvas API', 'Web Audio API'],
     github: '#',
-    live: '#',
+    live: 'https://portfolio-z26j.vercel.app/',
     status: 'LIVE',
   },
   {
@@ -83,10 +84,14 @@ const STATUS_COLOR = {
 const Projects = () => {
   const [filter, setFilter] = useState('all');
   const { ref, inView } = useInView();
+  const gridRef = useScrollReveal({ threshold: 0.12 });
 
   const filtered = filter === 'all'
     ? PROJECTS
     : PROJECTS.filter((p) => p.category === filter);
+
+  // Alternate left/right for each card
+  const getRevealClass = (index) => (index % 2 === 0 ? 'reveal-left' : 'reveal-right');
 
   return (
     <section id="projects" className="projects-section" ref={ref}>
@@ -108,12 +113,13 @@ const Projects = () => {
         ))}
       </div>
 
-      <div className="projects-grid">
+      <div className="projects-grid" ref={gridRef}>
         {filtered.map((project, i) => (
           <div
             key={project.id}
-            className={`card project-card ${inView ? 'animate-in' : ''}`}
-            style={{ animationDelay: `${0.1 * (i % 3)}s` }}
+            className={`card project-card ${getRevealClass(i)}`}
+            data-reveal
+            style={{ transitionDelay: `${0.08 * (i % 3)}s` }}
           >
             <div className="project-card-top">
               <div className="project-meta">

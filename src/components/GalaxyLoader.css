@@ -1,0 +1,151 @@
+.galaxy-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+}
+
+.galaxy-loader.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.galaxy-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.galaxy-overlay {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* HUD targeting reticle */
+.galaxy-hud {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+
+.galaxy-hud-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 255, 80, 0.5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.galaxy-hud-ring.outer {
+  width: 160px;
+  height: 160px;
+  border-color: rgba(0, 255, 80, 0.25);
+  animation: hud-spin 8s linear infinite;
+}
+
+.galaxy-hud-ring.middle {
+  width: 110px;
+  height: 110px;
+  border-color: rgba(0, 255, 80, 0.4);
+  animation: hud-spin 5s linear infinite reverse;
+  border-style: dashed;
+}
+
+.galaxy-hud-ring.inner {
+  width: 60px;
+  height: 60px;
+  border-color: rgba(0, 255, 80, 0.7);
+  animation: hud-spin 3s linear infinite;
+  box-shadow: 0 0 20px rgba(0, 255, 80, 0.3), inset 0 0 20px rgba(0, 255, 80, 0.1);
+}
+
+.galaxy-hud-cross {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: rgba(0, 255, 80, 0.6);
+}
+
+.galaxy-hud-cross.h {
+  width: 160px;
+  height: 1px;
+  transform: translate(-50%, -50%);
+}
+
+.galaxy-hud-cross.v {
+  width: 1px;
+  height: 160px;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes hud-spin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* text block */
+.galaxy-text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.galaxy-label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.35em;
+  color: rgba(0, 255, 80, 0.9);
+  text-transform: uppercase;
+  text-shadow: 0 0 12px rgba(0, 255, 80, 0.6);
+}
+
+.galaxy-sublabel {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  color: rgba(0, 255, 80, 0.4);
+  text-transform: uppercase;
+  animation: blink-slow 1.2s step-end infinite;
+}
+
+@keyframes blink-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.galaxy-progress-bar {
+  width: 240px;
+  height: 2px;
+  background: rgba(0, 255, 80, 0.12);
+  border-radius: 1px;
+  overflow: hidden;
+  position: relative;
+}
+
+.galaxy-progress-fill {
+  height: 100%;
+  background: rgba(0, 255, 80, 0.9);
+  box-shadow: 0 0 10px rgba(0, 255, 80, 0.8);
+  transition: width 0.15s linear;
+  border-radius: 1px;
+}
+
+.galaxy-progress-num {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 22px;
+  color: rgba(0, 255, 80, 0.85);
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 20px rgba(0, 255, 80, 0.5);
+}
