@@ -4,8 +4,8 @@
   left: 0;
   right: 0;
   height: var(--nav-height-mobile);
-  background: var(--nav-bg, rgba(2, 2, 2, 0.92));
-  border-top: 1px solid var(--nav-border, var(--neon-green-border));
+  background: var(--nav-bg, var(--bg-section));
+  border-top: 1px solid var(--nav-border);
   backdrop-filter: blur(16px);
   z-index: 1000;
   display: flex;
@@ -58,11 +58,11 @@
 
 .nav-btn:hover,
 .nav-btn.active {
-  color: var(--accent, var(--neon-green));
+  color: var(--accent);
 }
 
 .nav-btn.active .nav-icon {
-  filter: drop-shadow(0 0 6px var(--accent-glow, rgba(0, 255, 65, 0.6)));
+  filter: drop-shadow(0 0 6px var(--accent-glow));
 }
 
 .nav-icon {
@@ -85,7 +85,7 @@
   transform: translateX(-50%);
   width: 20px;
   height: 2px;
-  background: var(--accent, var(--neon-green));
+  background: var(--accent);
   box-shadow: var(--glow-sm);
 }
 
@@ -93,7 +93,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--accent, var(--neon-green));
+  background: var(--accent);
   box-shadow: var(--glow-sm);
   display: inline-block;
   animation: pulse-glow 2s ease-in-out infinite;
@@ -110,12 +110,12 @@
   left: 50%;
   transform: translateX(-50%);
   background: var(--dropdown-bg, rgba(4, 16, 4, 0.97));
-  border: 1px solid var(--accent, var(--neon-green-border));
+  border: 1px solid var(--accent);
   border-radius: 6px;
   backdrop-filter: blur(20px);
   padding: 8px;
   min-width: 160px;
-  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.6), 0 0 20px var(--accent-glow, rgba(0, 255, 65, 0.1));
+  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.6), 0 0 20px var(--accent-glow);
   animation: dropdown-pop 0.2s cubic-bezier(0.22, 1, 0.36, 1);
   z-index: 999;
 }
@@ -155,12 +155,12 @@
 
 .nav-theme-option:hover {
   background: rgba(255,255,255,0.06);
-  color: var(--accent, var(--neon-green));
+  color: var(--accent);
 }
 
 .nav-theme-option.selected {
-  color: var(--accent, var(--neon-green));
-  background: rgba(0, 255, 65, 0.06);
+  color: var(--accent);
+  background: var(--accent-bg);
 }
 
 .nav-theme-option-icon {
@@ -177,7 +177,7 @@
 .nav-theme-option-check {
   display: flex;
   align-items: center;
-  color: var(--accent, var(--neon-green));
+  color: var(--accent);
 }
 
 @media (min-width: 1024px) {
@@ -193,8 +193,8 @@
     justify-content: space-between;
     padding: 24px 0;
     border-top: none;
-    border-right: 1px solid var(--nav-border, var(--neon-green-border));
-    background: var(--nav-bg, rgba(2, 2, 2, 0.95));
+    border-right: 1px solid var(--nav-border);
+    background: var(--nav-bg, var(--bg-section));
   }
 
   .nav-brand {
@@ -209,7 +209,7 @@
     font-family: var(--font-mono);
     font-size: 11px;
     letter-spacing: 0.2em;
-    color: var(--accent, var(--neon-green));
+    color: var(--accent);
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
@@ -219,7 +219,7 @@
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background: var(--accent, var(--neon-green));
+    background: var(--accent);
     box-shadow: var(--glow-sm);
     animation: blink 2s ease-in-out infinite;
   }

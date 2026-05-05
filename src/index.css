@@ -1,177 +1,177 @@
-/* ===================================================
-   IMPORTS
-   =================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Exo+2:wght@400;600;800&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Exo+2:wght@400;600;800&family=Cinzel:wght@700&family=Lato:wght@300;400;700&display=swap');
 
-/* ===================================================
-   SPACE THEME (default)
-   =================================================== */
+/* ═══════════════════════════════════════════════════
+   SPACE THEME  (default)
+   ═══════════════════════════════════════════════════ */
 :root,
 [data-theme="space"] {
-  --bg-primary: #020202;
-  --bg-secondary: #050c05;
-  --bg-card: rgba(0, 255, 65, 0.03);
-  --neon-green: #00ff41;
-  --neon-green-dim: rgba(0, 255, 65, 0.4);
-  --neon-green-glow: rgba(0, 255, 65, 0.15);
-  --neon-green-border: rgba(0, 255, 65, 0.25);
-  --text-primary: #e8ffe8;
-  --text-secondary: rgba(232, 255, 232, 0.55);
-  --text-muted: rgba(232, 255, 232, 0.3);
-  --font-mono: 'Share Tech Mono', monospace;
-  --font-display: 'Exo 2', sans-serif;
+  --bg-primary:        #020202;
+  --bg-secondary:      #050c05;
+  --bg-card:           rgba(0, 255, 65, 0.03);
+  --bg-card-hover:     rgba(0, 255, 65, 0.07);
+  --bg-section:        rgba(2, 2, 2, 0.55);
+  --bg-overlay:        rgba(2, 2, 2, 0.75);
+
+  --accent:            #00ff41;
+  --accent-dim:        rgba(0, 255, 65, 0.45);
+  --accent-border:     rgba(0, 255, 65, 0.22);
+  --accent-glow:       rgba(0, 255, 65, 0.5);
+  --accent-bg:         rgba(0, 255, 65, 0.04);
+  --accent-bg-hover:   rgba(0, 255, 65, 0.08);
+  --accent-subtle:     rgba(0, 255, 65, 0.08);
+  --accent-bar-track:  rgba(0, 255, 65, 0.10);
+  --accent-bar-shadow: rgba(0, 255, 65, 0.50);
+
+  --text-primary:      #e8ffe8;
+  --text-secondary:    rgba(232, 255, 232, 0.55);
+  --text-muted:        rgba(232, 255, 232, 0.30);
+  --text-on-accent:    #000;
+
+  --font-display:      'Exo 2', sans-serif;
+  --font-mono:         'Share Tech Mono', monospace;
+  --font-body:         'Share Tech Mono', monospace;
+
+  --nav-bg:            rgba(2, 2, 2, 0.96);
+  --nav-border:        rgba(0, 255, 65, 0.18);
+  --dropdown-bg:       rgba(4, 10, 4, 0.97);
+
+  --glow-sm:  0 0 8px  rgba(0, 255, 65, 0.40);
+  --glow-md:  0 0 20px rgba(0, 255, 65, 0.28), 0 0 40px rgba(0, 255, 65, 0.10);
+  --glow-lg:  0 0 40px rgba(0, 255, 65, 0.38), 0 0 80px rgba(0, 255, 65, 0.14);
+
+  --border-radius:     4px;
+  --transition:        all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --nav-height-mobile: 64px;
   --nav-width-desktop: 72px;
-  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --glow-sm: 0 0 8px rgba(0, 255, 65, 0.4);
-  --glow-md: 0 0 20px rgba(0, 255, 65, 0.3), 0 0 40px rgba(0, 255, 65, 0.1);
-  --glow-lg: 0 0 40px rgba(0, 255, 65, 0.4), 0 0 80px rgba(0, 255, 65, 0.15);
-
-  /* theme alias tokens */
-  --accent: #00ff41;
-  --accent-dim: rgba(0, 255, 65, 0.4);
-  --accent-glow: rgba(0, 255, 65, 0.5);
-  --accent-border: rgba(0, 255, 65, 0.25);
-  --accent-bg: rgba(0, 255, 65, 0.03);
-  --accent-bg-hover: rgba(0, 255, 65, 0.07);
-  --nav-bg: rgba(2, 2, 2, 0.95);
-  --nav-border: rgba(0, 255, 65, 0.2);
-  --dropdown-bg: rgba(4, 10, 4, 0.97);
-  --btn-text-on-accent: #000;
-
-  /* scrollbar */
-  --scrollbar-thumb: rgba(0, 255, 65, 0.4);
+  --scrollbar-thumb:   rgba(0, 255, 65, 0.35);
 }
 
-/* ===================================================
+/* ═══════════════════════════════════════════════════
    FOREST THEME
-   =================================================== */
+   ═══════════════════════════════════════════════════ */
 [data-theme="forest"] {
-  --bg-primary: #060e06;
-  --bg-secondary: #0a1a0a;
-  --bg-card: rgba(34, 139, 34, 0.05);
+  --bg-primary:        #020a02;
+  --bg-secondary:      #030e03;
+  --bg-card:           rgba(30, 90, 30, 0.18);
+  --bg-card-hover:     rgba(40, 110, 40, 0.28);
+  --bg-section:        rgba(2, 10, 2, 0.62);
+  --bg-overlay:        rgba(2, 10, 2, 0.80);
 
-  --accent: #4ade80;
-  --accent-dim: rgba(74, 222, 128, 0.45);
-  --accent-glow: rgba(74, 222, 128, 0.5);
-  --accent-border: rgba(74, 222, 128, 0.3);
-  --accent-bg: rgba(34, 139, 34, 0.05);
-  --accent-bg-hover: rgba(34, 139, 34, 0.1);
+  --accent:            #5ddb7c;
+  --accent-dim:        rgba(93, 219, 124, 0.50);
+  --accent-border:     rgba(93, 219, 124, 0.32);
+  --accent-glow:       rgba(93, 219, 124, 0.55);
+  --accent-bg:         rgba(30, 110, 50, 0.14);
+  --accent-bg-hover:   rgba(40, 130, 60, 0.22);
+  --accent-subtle:     rgba(30, 90, 30, 0.18);
+  --accent-bar-track:  rgba(60, 160, 80, 0.18);
+  --accent-bar-shadow: rgba(93, 219, 124, 0.55);
 
-  /* keep old variable names working */
-  --neon-green: #4ade80;
-  --neon-green-dim: rgba(74, 222, 128, 0.45);
-  --neon-green-glow: rgba(74, 222, 128, 0.15);
-  --neon-green-border: rgba(74, 222, 128, 0.3);
+  --text-primary:      #c8f0c8;
+  --text-secondary:    rgba(180, 230, 180, 0.70);
+  --text-muted:        rgba(140, 200, 140, 0.42);
+  --text-on-accent:    #011001;
 
-  --text-primary: #d4f5d4;
-  --text-secondary: rgba(180, 240, 180, 0.6);
-  --text-muted: rgba(150, 220, 150, 0.35);
+  --font-display:      'Cinzel', serif;
+  --font-mono:         'Share Tech Mono', monospace;
+  --font-body:         'Lato', sans-serif;
 
-  --font-display: 'Playfair Display', 'Exo 2', sans-serif;
-  --font-mono: 'Share Tech Mono', monospace;
+  --nav-bg:            rgba(2, 10, 2, 0.96);
+  --nav-border:        rgba(93, 219, 124, 0.22);
+  --dropdown-bg:       rgba(3, 12, 3, 0.97);
 
-  --glow-sm: 0 0 10px rgba(74, 222, 128, 0.45);
-  --glow-md: 0 0 22px rgba(74, 222, 128, 0.3), 0 0 44px rgba(34, 139, 34, 0.12);
-  --glow-lg: 0 0 44px rgba(74, 222, 128, 0.4), 0 0 88px rgba(34, 139, 34, 0.18);
+  --glow-sm:  0 0 10px rgba(93, 219, 124, 0.45);
+  --glow-md:  0 0 22px rgba(93, 219, 124, 0.30), 0 0 44px rgba(40, 140, 60, 0.14);
+  --glow-lg:  0 0 44px rgba(93, 219, 124, 0.40), 0 0 88px rgba(40, 140, 60, 0.18);
 
-  --nav-bg: rgba(4, 12, 4, 0.96);
-  --nav-border: rgba(74, 222, 128, 0.22);
-  --dropdown-bg: rgba(4, 14, 4, 0.97);
-  --btn-text-on-accent: #001800;
-  --scrollbar-thumb: rgba(74, 222, 128, 0.4);
-
-  /* nav height unchanged */
+  --border-radius:     2px;
+  --transition:        all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   --nav-height-mobile: 64px;
   --nav-width-desktop: 72px;
-  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --scrollbar-thumb:   rgba(93, 219, 124, 0.38);
 }
 
-/* ===================================================
+/* ═══════════════════════════════════════════════════
    VEGETATION THEME
-   =================================================== */
+   ═══════════════════════════════════════════════════ */
 [data-theme="vegetation"] {
-  --bg-primary: #03100a;
-  --bg-secondary: #061a0e;
-  --bg-card: rgba(22, 163, 74, 0.05);
+  --bg-primary:        #011a05;
+  --bg-secondary:      #022208;
+  --bg-card:           rgba(20, 120, 50, 0.14);
+  --bg-card-hover:     rgba(25, 140, 60, 0.24);
+  --bg-section:        rgba(1, 22, 5, 0.58);
+  --bg-overlay:        rgba(1, 22, 5, 0.78);
 
-  --accent: #86efac;
-  --accent-dim: rgba(134, 239, 172, 0.45);
-  --accent-glow: rgba(134, 239, 172, 0.55);
-  --accent-border: rgba(134, 239, 172, 0.3);
-  --accent-bg: rgba(22, 163, 74, 0.05);
-  --accent-bg-hover: rgba(22, 163, 74, 0.1);
+  --accent:            #7fff8e;
+  --accent-dim:        rgba(127, 255, 142, 0.50);
+  --accent-border:     rgba(127, 255, 142, 0.30);
+  --accent-glow:       rgba(127, 255, 142, 0.55);
+  --accent-bg:         rgba(20, 140, 55, 0.14);
+  --accent-bg-hover:   rgba(28, 160, 65, 0.22);
+  --accent-subtle:     rgba(20, 100, 40, 0.18);
+  --accent-bar-track:  rgba(80, 200, 100, 0.16);
+  --accent-bar-shadow: rgba(127, 255, 142, 0.55);
 
-  --neon-green: #86efac;
-  --neon-green-dim: rgba(134, 239, 172, 0.45);
-  --neon-green-glow: rgba(134, 239, 172, 0.18);
-  --neon-green-border: rgba(134, 239, 172, 0.28);
+  --text-primary:      #d8fae0;
+  --text-secondary:    rgba(195, 245, 205, 0.68);
+  --text-muted:        rgba(155, 220, 170, 0.40);
+  --text-on-accent:    #001505;
 
-  --text-primary: #e0fae8;
-  --text-secondary: rgba(200, 245, 215, 0.6);
-  --text-muted: rgba(160, 230, 180, 0.35);
+  --font-display:      'Exo 2', sans-serif;
+  --font-mono:         'Share Tech Mono', monospace;
+  --font-body:         'Lato', sans-serif;
 
-  --font-display: 'Exo 2', sans-serif;
-  --font-mono: 'Share Tech Mono', monospace;
+  --nav-bg:            rgba(1, 18, 5, 0.96);
+  --nav-border:        rgba(127, 255, 142, 0.20);
+  --dropdown-bg:       rgba(2, 20, 6, 0.97);
 
-  --glow-sm: 0 0 10px rgba(134, 239, 172, 0.45);
-  --glow-md: 0 0 22px rgba(134, 239, 172, 0.3), 0 0 44px rgba(22, 163, 74, 0.12);
-  --glow-lg: 0 0 44px rgba(134, 239, 172, 0.4), 0 0 88px rgba(22, 163, 74, 0.18);
+  --glow-sm:  0 0 10px rgba(127, 255, 142, 0.45);
+  --glow-md:  0 0 22px rgba(127, 255, 142, 0.30), 0 0 44px rgba(40, 180, 70, 0.14);
+  --glow-lg:  0 0 44px rgba(127, 255, 142, 0.40), 0 0 88px rgba(40, 180, 70, 0.18);
 
-  --nav-bg: rgba(3, 14, 8, 0.96);
-  --nav-border: rgba(134, 239, 172, 0.22);
-  --dropdown-bg: rgba(3, 16, 8, 0.97);
-  --btn-text-on-accent: #001a06;
-  --scrollbar-thumb: rgba(134, 239, 172, 0.4);
-
+  --border-radius:     6px;
+  --transition:        all 0.32s cubic-bezier(0.4, 0, 0.2, 1);
   --nav-height-mobile: 64px;
   --nav-width-desktop: 72px;
-  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --scrollbar-thumb:   rgba(127, 255, 142, 0.38);
 }
 
-/* ===================================================
-   GLOBAL RESETS & BASE
-   =================================================== */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* ═══════════════════════════════════════════════════
+   GLOBAL RESETS
+   ═══════════════════════════════════════════════════ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   overflow-x: hidden;
-  cursor: default;
-  transition: background-color 0.6s ease, color 0.4s ease;
+  transition: background-color 0.7s ease, color 0.5s ease;
 }
 
-::selection {
-  background: var(--accent);
-  color: var(--btn-text-on-accent, #000);
-}
+::selection { background: var(--accent); color: var(--text-on-accent); }
 
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--bg-primary); }
-::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb, rgba(0,255,65,0.4)); border-radius: 2px; }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 2px; }
 
+/* ═══════════════════════════════════════════════════
+   LAYOUT
+   ═══════════════════════════════════════════════════ */
 .app-layout {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
 }
 
 .main-content {
   flex: 1;
   padding-bottom: var(--nav-height-mobile);
+  position: relative;
+  z-index: 1;
 }
 
 section {
@@ -182,25 +182,41 @@ section {
   justify-content: center;
   position: relative;
   overflow: hidden;
+  background: var(--bg-section);
+  transition: background 0.7s ease;
 }
 
+/* alternate section tinting */
+section:nth-child(even) {
+  background: var(--bg-overlay);
+}
+
+@media (min-width: 1024px) {
+  .app-layout { flex-direction: row; }
+  .main-content { margin-left: var(--nav-width-desktop); padding-bottom: 0; }
+  section { padding: 100px 80px; }
+}
+
+/* ═══════════════════════════════════════════════════
+   TYPOGRAPHY HELPERS
+   ═══════════════════════════════════════════════════ */
 .section-label {
   font-family: var(--font-mono);
   font-size: 11px;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.30em;
   color: var(--accent);
   text-transform: uppercase;
   margin-bottom: 12px;
-  opacity: 0.7;
+  opacity: 0.75;
   transition: color 0.5s ease;
 }
 
 .section-title {
   font-family: var(--font-display);
   font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 800;
+  font-weight: 700;
   color: var(--text-primary);
-  line-height: 1.1;
+  line-height: 1.12;
   margin-bottom: 16px;
   transition: color 0.5s ease;
 }
@@ -212,12 +228,13 @@ section {
 }
 
 .section-desc {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 14px;
   color: var(--text-secondary);
   max-width: 560px;
-  line-height: 1.8;
+  line-height: 1.85;
   margin-bottom: 48px;
+  transition: color 0.5s ease;
 }
 
 .neon-line {
@@ -229,21 +246,21 @@ section {
   transition: background 0.5s ease, box-shadow 0.5s ease;
 }
 
-/* ===================================================
+/* ═══════════════════════════════════════════════════
    CARD
-   =================================================== */
+   ═══════════════════════════════════════════════════ */
 .card {
   background: var(--bg-card);
   border: 1px solid var(--accent-border);
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   padding: 28px;
-  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
-              box-shadow 0.4s ease,
-              border-color 0.4s ease,
-              background 0.4s ease;
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.4s ease,
+    border-color 0.4s ease,
+    background 0.5s ease;
   position: relative;
   overflow: hidden;
-  transform-style: preserve-3d;
 }
 
 .card::before {
@@ -257,17 +274,17 @@ section {
 }
 
 .card:hover {
+  background: var(--bg-card-hover);
   border-color: var(--accent-dim);
-  background: var(--accent-bg-hover);
-  box-shadow: var(--glow-md), 0 24px 48px rgba(0, 0, 0, 0.5);
-  transform: translateY(-6px) rotateX(3deg) rotateY(-1deg);
+  box-shadow: var(--glow-md), 0 24px 48px rgba(0,0,0,0.45);
+  transform: translateY(-6px);
 }
 
 .card:hover::before { opacity: 1; }
 
-/* ===================================================
+/* ═══════════════════════════════════════════════════
    BUTTONS
-   =================================================== */
+   ═══════════════════════════════════════════════════ */
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -275,6 +292,7 @@ section {
   padding: 14px 32px;
   background: transparent;
   border: 1px solid var(--accent);
+  border-radius: var(--border-radius);
   color: var(--accent);
   font-family: var(--font-mono);
   font-size: 13px;
@@ -290,49 +308,38 @@ section {
 .btn-primary::before {
   content: '';
   position: absolute;
-  top: 0; left: -100%;
-  width: 100%; height: 100%;
+  inset: 0;
   background: var(--accent);
-  transition: left 0.3s ease;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
   z-index: 0;
 }
 
-.btn-primary:hover { color: var(--btn-text-on-accent, #000); box-shadow: var(--glow-md); }
-.btn-primary:hover::before { left: 0; }
-.btn-primary span, .btn-primary svg { position: relative; z-index: 1; }
+.btn-primary:hover { color: var(--text-on-accent); box-shadow: var(--glow-md); }
+.btn-primary:hover::before { transform: translateX(0); }
+.btn-primary > * { position: relative; z-index: 1; }
 
-/* ===================================================
-   SCROLL REVEAL ANIMATIONS
-   =================================================== */
+/* ═══════════════════════════════════════════════════
+   SCROLL REVEAL
+   ═══════════════════════════════════════════════════ */
 .reveal {
   opacity: 0;
-  transform: translateY(70px) rotateX(-10deg);
-  transform-origin: top center;
-  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
-              transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  transform: translateY(60px);
+  transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.reveal-fall {
-  opacity: 0;
-  transform: translateY(-80px) rotateX(18deg) scale(0.94);
-  transform-origin: bottom center;
-  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
-              transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-/* slide from left — used for project cards on even rows */
 .reveal-left {
   opacity: 0;
-  transform: translateX(-100px) rotateY(15deg);
+  transform: translateX(-90px) rotateY(12deg);
   transform-origin: right center;
   transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
               transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* slide from right — used for project cards on odd rows */
 .reveal-right {
   opacity: 0;
-  transform: translateX(100px) rotateY(-15deg);
+  transform: translateX(90px) rotateY(-12deg);
   transform-origin: left center;
   transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
               transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
@@ -340,31 +347,22 @@ section {
 
 .reveal-zoom {
   opacity: 0;
-  transform: scale(0.65) translateY(40px);
+  transform: scale(0.7);
   transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
               transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .reveal.is-visible,
-.reveal-fall.is-visible,
 .reveal-left.is-visible,
 .reveal-right.is-visible,
-.reveal-zoom.is-visible {
-  opacity: 1;
-  transform: none;
-}
+.reveal-zoom.is-visible { opacity: 1; transform: none; }
 
-/* animate-in (existing class) */
 @keyframes animateIn {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: none; }
 }
+.animate-in { animation: animateIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; }
 
-.animate-in {
-  animation: animateIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-/* stagger delays */
 .delay-1 { transition-delay: 0.07s; animation-delay: 0.07s; }
 .delay-2 { transition-delay: 0.14s; animation-delay: 0.14s; }
 .delay-3 { transition-delay: 0.21s; animation-delay: 0.21s; }
@@ -374,66 +372,34 @@ section {
 .delay-7 { transition-delay: 0.49s; animation-delay: 0.49s; }
 .delay-8 { transition-delay: 0.56s; animation-delay: 0.56s; }
 
-/* ===================================================
+/* ═══════════════════════════════════════════════════
    KEYFRAMES
-   =================================================== */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fallIn {
-  from { opacity: 0; transform: translateY(-60px) rotateX(15deg) scale(0.93); }
-  to   { opacity: 1; transform: none; }
-}
-
-@keyframes scanline {
-  0%   { transform: translateY(-100%); }
-  100% { transform: translateY(100vh); }
-}
-
+   ═══════════════════════════════════════════════════ */
 @keyframes pulse-glow {
   0%, 100% { box-shadow: var(--glow-sm); }
   50%       { box-shadow: var(--glow-md); }
 }
-
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0; }
+  0%, 100% { opacity: 1; } 50% { opacity: 0; }
 }
-
-@keyframes neonFlicker {
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
-  20%, 24%, 55% { opacity: 0.7; }
-}
-
 @keyframes floatY {
-  0%, 100% { transform: translateY(0px); }
+  0%, 100% { transform: translateY(0); }
   50%       { transform: translateY(-12px); }
 }
-
 @keyframes spinSlow {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
+  from { transform: rotate(0deg); } to { transform: rotate(360deg); }
 }
-
-@keyframes borderPulse {
-  0%, 100% { border-color: var(--accent-border); }
-  50%       { border-color: var(--accent); box-shadow: var(--glow-sm); }
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: none; }
 }
-
 @keyframes progressFill {
   from { width: 0%; }
 }
 
-/* ===================================================
-   LAYOUT HELPERS
-   =================================================== */
+/* ═══════════════════════════════════════════════════
+   GRID HELPERS
+   ═══════════════════════════════════════════════════ */
 .grid-2 { display: grid; grid-template-columns: 1fr; gap: 24px; }
 .grid-3 { display: grid; grid-template-columns: 1fr; gap: 20px; }
 
@@ -441,10 +407,6 @@ section {
   .grid-2 { grid-template-columns: repeat(2, 1fr); }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
 }
-
 @media (min-width: 1024px) {
-  .app-layout { flex-direction: row; }
-  .main-content { margin-left: var(--nav-width-desktop); padding-bottom: 0; }
   .grid-3 { grid-template-columns: repeat(3, 1fr); }
-  section { padding: 100px 80px; }
 }

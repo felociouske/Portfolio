@@ -1,21 +1,8 @@
-.experience-section {
-  position: relative;
-  z-index: 1;
-  background: rgba(2, 2, 2, 0.6);
-}
+.experience-section { position: relative; z-index: 1; }
 
-.timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  max-width: 760px;
-}
+.timeline { display: flex; flex-direction: column; gap: 0; max-width: 760px; }
 
-.timeline-item {
-  display: flex;
-  gap: 0;
-  position: relative;
-}
+.timeline-item { display: flex; gap: 0; position: relative; }
 
 .timeline-line {
   display: flex;
@@ -40,6 +27,7 @@
   z-index: 1;
   flex-shrink: 0;
   margin-top: 20px;
+  transition: border-color 0.5s ease, color 0.5s ease, background 0.5s ease, box-shadow 0.5s ease;
 }
 
 .timeline-line::after {
@@ -51,11 +39,10 @@
   width: 1px;
   height: calc(100% - 28px);
   background: linear-gradient(180deg, var(--accent-border), transparent);
+  transition: background 0.5s ease;
 }
 
-.timeline-item:last-child .timeline-line::after {
-  display: none;
-}
+.timeline-item:last-child .timeline-line::after { display: none; }
 
 .timeline-content {
   flex: 1;
@@ -76,9 +63,10 @@
   font-size: 10px;
   letter-spacing: 0.15em;
   color: var(--accent);
-  opacity: 0.7;
+  opacity: 0.75;
   display: block;
   margin-bottom: 4px;
+  transition: color 0.5s ease;
 }
 
 .timeline-role {
@@ -87,6 +75,7 @@
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 4px;
+  transition: color 0.5s ease;
 }
 
 .timeline-company {
@@ -94,6 +83,7 @@
   font-size: 11px;
   color: var(--text-secondary);
   letter-spacing: 0.05em;
+  transition: color 0.5s ease;
 }
 
 .timeline-type-badge {
@@ -102,7 +92,9 @@
   letter-spacing: 0.2em;
   padding: 4px 8px;
   border: 1px solid;
+  border-radius: var(--border-radius);
   flex-shrink: 0;
+  transition: color 0.5s ease, border-color 0.5s ease;
 }
 
 .timeline-type-badge.work {
@@ -111,20 +103,27 @@
 }
 
 .timeline-type-badge.education {
-  color: #00bfff;
-  border-color: rgba(0, 191, 255, 0.3);
+  color: #4fc3f7;
+  border-color: rgba(79, 195, 247, 0.35);
 }
 
 .timeline-desc {
-  font-family: var(--font-mono);
-  font-size: 12px;
+  font-family: var(--font-body);
+  font-size: 13px;
   color: var(--text-secondary);
-  line-height: 1.8;
+  line-height: 1.85;
   margin-bottom: 14px;
+  transition: color 0.5s ease;
 }
 
-.timeline-skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
+.timeline-skills { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.timeline-skill-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--border-radius);
+  padding: 3px 8px;
+  transition: color 0.5s ease, border-color 0.5s ease;
 }
