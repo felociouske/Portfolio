@@ -7,7 +7,7 @@ const ROLES = [
   'React Engineer',
   'Django Developer',
   'Data Analyst',
-  'Problem Solver',
+  'React-native app android and ios developer',
 ];
 
 const Hero = () => {

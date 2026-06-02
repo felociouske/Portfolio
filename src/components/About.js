@@ -19,7 +19,7 @@ const About = () => {
             I am a passionate Full Stack Developer and Data Analyst building
             scalable web applications and deriving meaningful insights from complex
             datasets. My stack is rooted in <strong>React</strong> on the frontend
-            and <strong>Django</strong> on the backend, with a deep interest in data
+            , <strong>Django</strong> on the backend and <strong>React Native</strong> for mobile development, with a deep interest in data
             pipelines and analytics tooling.
           </p>
 
@@ -38,7 +38,7 @@ const About = () => {
             <div className="about-detail-row">
               <span className="about-detail-key">Focus</span>
               <span className="about-detail-sep">::</span>
-              <span className="about-detail-val">Web Dev + Data Analytics</span>
+              <span className="about-detail-val">Web & Mobile Development</span>
             </div>
             <div className="about-detail-row">
               <span className="about-detail-key">Available</span>
